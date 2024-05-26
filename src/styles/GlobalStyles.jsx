@@ -1,0 +1,53 @@
+import { StyleSheet } from "react-native";
+export const Styles = StyleSheet.create({
+  inputView: {
+    justifyContent: "center",
+    alignContent: "center",
+    borderColor: "gray",
+    width: "auto",
+    height: "40%",
+    shadowColor: "#fff",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0,
+    shadowRadius: 2,
+    elevation: 1,
+    margin: 15,
+    borderColor: "black",
+    borderWidth: 1,
+    borderRadius: 20,
+  },
+  inputTextStyle1: {
+    color: "Black",
+    width: "90%",
+    height: "20%",
+    textAlign: "right",
+    alignSelf: "center",
+    fontSize: 30,
+    padding: 10,
+  },
+  inputTextStyle2: {
+    color: "Black",
+    width: "90%",
+    height: "20%",
+    textAlign: "right",
+    alignSelf: "center",
+    fontSize: 16,
+  },
+  keyboard: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  key: {
+    fontSize: 27,
+    padding: 10,
+    width: 60,
+    height: 60,
+    textAlign: "center",
+    margin: 5,
+    borderWidth: 0.2,
+    borderRadius: 10,
+  },
+  keyText: {
+    fontSize: 24,
+  },
+});
