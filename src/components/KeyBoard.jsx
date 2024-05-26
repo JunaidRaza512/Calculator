@@ -133,7 +133,7 @@ export default function KeyBoard() {
           justifyContent: "space-around",
           alignContent: "space-evenly",
           width: "95%",
-          backgroundColor: "#EDEDED",
+          backgroundColor: "#BBBEC2",
         }}
       >
         {buttons.map((button) => {
@@ -147,9 +147,16 @@ export default function KeyBoard() {
               style={Styles.keyboard}
               onPress={() => handlePress(button)}
             >
-              <Text style={[Styles.key, { color: "green" }]}>{button}</Text>
+              <Text
+                style={[
+                  Styles.key,
+                  { color: "white", backgroundColor: "blue" },
+                ]}
+              >
+                {button}
+              </Text>
             </TouchableOpacity>
-          ) : button === 0 ? (
+          ) : button === "." || button === 0 ? (
             <TouchableOpacity
               key={button}
               style={Styles.keyboard}
@@ -157,13 +164,20 @@ export default function KeyBoard() {
             >
               <Text style={Styles.key}>{button}</Text>
             </TouchableOpacity>
-          ) : button === "." || button === "AC" ? (
+          ) : button === "AC" ? (
             <TouchableOpacity
               key={button}
               style={Styles.keyboard}
               onPress={() => handlePress(button)}
             >
-              <Text style={[Styles.key, { color: "green" }]}>{button}</Text>
+              <Text
+                style={[
+                  Styles.key,
+                  { color: "white", backgroundColor: "blue" },
+                ]}
+              >
+                {button}
+              </Text>
             </TouchableOpacity>
           ) : button === "C" || button === "%" ? (
             <TouchableOpacity
@@ -171,7 +185,14 @@ export default function KeyBoard() {
               style={Styles.keyboard}
               onPress={() => handlePress(button)}
             >
-              <Text style={[Styles.key, { color: "green" }]}>{button}</Text>
+              <Text
+                style={[
+                  Styles.key,
+                  { color: "white", backgroundColor: "blue" },
+                ]}
+              >
+                {button}
+              </Text>
             </TouchableOpacity>
           ) : (
             <TouchableOpacity
